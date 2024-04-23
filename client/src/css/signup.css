@@ -1,0 +1,59 @@
+/* SignUp.css */
+
+
+#signin-container {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  max-width: 400px;
+  margin: 46px auto;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 120px;
+  box-shadow: 0px 0px 10px #333;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #052357;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+p {
+  cursor: pointer;
+}
+input:hover {
+  border: 2px solid #cddaf1;
+  box-shadow: 0px 0px 10px #ccc;
+}
+input[type="submit"] {
+  background-color: #052357;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 2px solid #052357;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: #051e4b;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 10px #ccc;
+}
