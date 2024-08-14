@@ -28,32 +28,18 @@ function Appointment() {
       return;
     }
 
-    if (!type.trim()) {
-      alert('Please select a service type');
-      return;
-    }
-
-    if (!date.trim()) {
-      alert('Please select a date');
-      return;
-    }
-
-    if (!time.trim()) {
-      alert('Please select a time');
-      return;
-    }
-
     if (!problem.trim()) {
       alert('Please describe the problem');
       return;
     }
 
-    axios
-      .post('https://laptop-service-backend.onrender.com/appointment', { email, phone, type, date, time, problem })
+// check in personal mail for atlas
+
+    axios.post('https://laptop-service-backend.onrender.com/appointment', { email, phone, type, date, time, problem })
       .then((result) => {
         console.log(result);
         if (result.data === 'added') {
-          navigate('/home');
+          navigate('/');
         } else {
           alert("You don't have an account. Please Signup.");
         }

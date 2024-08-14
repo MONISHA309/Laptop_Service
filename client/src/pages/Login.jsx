@@ -28,11 +28,11 @@ function Login() {
       }
 
 
-      axios.post('https://laptop-service-backend.onrender.com/',{email,password})
+      axios.post('https://laptop-service-backend.onrender.com/login',{email,password})
       .then(result => {
           console.log(result)
           if(result.data === "success"){
-            navigate('/home')
+            navigate('/')
           }
           else{
             alert("No Record Exist.Please Signup")
@@ -50,7 +50,10 @@ function Login() {
 
           {/* email */}
           <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email"  onChange={(e) => setEmail(e.target.value)}/>
+          <input type="email" id="email" name="email"  onChange={(e) => setEmail(e.target.value)}/>   
+          {/* e - event object which contains the info about the event */}
+          {/* e.target.value contains the current value */}
+          {/* setEmail function set the current value to the variable Email , whenever a user types in the email input field, the setEmail function is called, updating the email state variable with the latest value from the input field. */}
 
 
           {/* password */}

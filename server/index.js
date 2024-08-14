@@ -10,7 +10,7 @@ app.use(cors());
 
 mongoose.connect("mongodb+srv://monishak:monishak@laptop-service.qqmesz7.mongodb.net/laptop-service?retryWrites=true&w=majority&appName=laptop-service")
 
-app.post("/",(req,res) => {
+app.post("/login",(req,res) => {
     const {email,password} = req.body;
     user.findOne({email})
     .then(user => {
@@ -52,8 +52,6 @@ app.post("/appointment", (req, res) => {
         })
         .catch(err => {res.json(err)});
 });
-
-
 
 
 app.post('/sign',(req,res) => {

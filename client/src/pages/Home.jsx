@@ -17,7 +17,7 @@ function Home() {
           <span className="navbar-brand-text">Laptop Services</span>
         </div>
         <div className="navbar-buttons">
-          <Link to="/" className="navbar-button">Login</Link>
+          <Link to="/login" className="navbar-button">Login</Link>
           <Link to="/sign" className="navbar-button">Sign Up</Link>
           <Link to="/appointment" className="navbar-button">Appointment</Link>
         </div>
